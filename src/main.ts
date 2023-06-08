@@ -1,7 +1,7 @@
-import './style.css'
+// import './style.css'
 
-const app = document.querySelector('#app') as HTMLDivElement
+// const app = document.querySelector('#app') as HTMLDivElement
 
-const inputUppercase = document.querySelector(
-  '#uppercaseText'
-) as HTMLInputElement
+// const inputUppercase = document.querySelector(
+//   '#uppercaseText'
+// ) as HTMLInputElement

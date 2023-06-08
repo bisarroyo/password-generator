@@ -14,6 +14,57 @@
   </head>
   <body>
     <h1>Password Generator by Bismark</h1>
+    <main>
+      <div class="container">
+        <div class="container-settings">
+          <div class="password-results" id="password-results">
+            <input type="text" value="" />
+            <button name="numberText" id="numberText">Copy</button>
+          </div>
+          <div class="input">
+            <label>Password Length </label>
+            <input
+              class="length-input"
+              type="number"
+              name="passwordLength"
+              id="passwordLength"
+              value="5"
+            />
+          </div>
+          <div class="input">
+            <label> Uppercase Characters</label>
+            <input
+              type="checkbox"
+              name="uppercaseText"
+              id="uppercaseText"
+              value="uppercase"
+            />
+          </div>
+          <div class="input">
+            <label>Include Special Characters </label>
+            <input
+              type="checkbox"
+              name="specialText"
+              id="specialText"
+              value="specials"
+            />
+          </div>
+          <div class="input">
+            <label>Include Numbers </label>
+            <input
+              type="checkbox"
+              name="numberText"
+              id="numberText"
+              value="numbers"
+            />
+          </div>
+
+          <div class="input generate">
+            <button name="numberText" id="numberText">Generate</button>
+          </div>
+        </div>
+      </div>
+    </main>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>

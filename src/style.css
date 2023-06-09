@@ -357,13 +357,17 @@ template {
 
 body {
   background-color: #bcdfc7;
+  height: 100vh;
+}
+main {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
 h1 {
+  text-align: center;
   padding: 25px 0;
   font-weight: bold;
   background: #116127;
@@ -434,12 +438,14 @@ h1 {
   background-color: #003503;
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 .password-results input {
-  width: 150px;
+  width: 210px;
   background-color: transparent;
   border: none;
   outline: none;
+  height: 25px;
 }
 .password-results button {
   width: 60px;
@@ -453,4 +459,7 @@ h1 {
 .password-results button:hover {
   color: #0a1e0b;
   background-color: #fff;
+}
+.copy {
+  background-color: #158f5b;
 }

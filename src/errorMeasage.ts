@@ -1,5 +1,3 @@
-let errorMesage: string = ''
-
 const displayErrorMessage = ({
   element,
   message
@@ -7,7 +5,6 @@ const displayErrorMessage = ({
   element: HTMLParagraphElement
   message: string
 }) => {
-  errorMesage = message
   element.innerText = message
 }
 

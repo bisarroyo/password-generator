@@ -8,7 +8,7 @@ function copyToClipboard(elementId: string) {
     navigator.clipboard
       .writeText(content)
       .then(() => {
-        alert('Contenido copiado al portapapeles: ' + content)
+        // alert('Contenido copiado al portapapeles: ' + content)
       })
       .catch((error) => {
         console.error('Error al copiar al portapapeles:', error)

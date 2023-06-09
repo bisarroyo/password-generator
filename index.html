@@ -13,8 +13,8 @@
     <title>Password Generator</title>
   </head>
   <body>
-    <h1>Password Generator by Bismark</h1>
     <main>
+      <h1>Password Generator by Bismark</h1>
       <div class="container">
         <div class="container-settings">
           <div class="password-results" id="password-results">
@@ -28,6 +28,8 @@
               type="number"
               name="passwordLength"
               id="passwordLength"
+              min="5"
+              max="20"
               value="8"
             />
           </div>
@@ -60,9 +62,12 @@
           </div>
 
           <div class="input generate">
-            <button name="numberText" id="numberText">Generate</button>
+            <button name="numberText" id="password-generator">Generate</button>
           </div>
         </div>
+      </div>
+      <div>
+        <p id="errors"></p>
       </div>
     </main>
     <div id="app"></div>

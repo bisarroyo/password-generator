@@ -18,6 +18,14 @@ const generator = $('password-generator') as HTMLButtonElement
 const error = $('errors') as HTMLParagraphElement
 
 copyButton?.addEventListener('click', () => {
+  const passwordLength: string = password.value
+  if (passwordLength.length === 0) {
+    displayErrorMessage({
+      element: error,
+      message: 'Please generate a password'
+    })
+    return
+  }
   copyToClipboard('password-generated')
   passwordResults.className += ' copy'
 })
